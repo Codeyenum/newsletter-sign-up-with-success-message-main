@@ -1,0 +1,147 @@
+:root {
+    /* ## Colors ## */
+
+    /* ### Primary ### */
+
+    --input-border-tomato: hsl(4, 100%, 67%);
+
+    /* ### Neutral ### */
+
+    --text-d-slategrey: hsl(234, 29%, 20%);
+    --bg-charcoalgrey: hsl(235, 18%, 26%);
+    --input-border-grey: hsl(231, 7%, 60%);
+    --bg-white: hsl(0, 0%, 100%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    color: var(--text-d-slategrey);
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    font-size: 2.35rem;
+}
+
+.hero-img-container {
+    max-height: 30vh;
+    width: 100%;
+}
+
+.hero-img {
+    border-radius: 0 0 20px 20px;
+    display: block;
+    min-width: 100vw;
+    max-height: 45vh;    
+}
+
+.form-section {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.95rem;
+    padding: 1.75rem 1.5rem;
+}
+
+.form-section p {
+    margin: 1.25rem 0;
+}
+
+.features-list {
+    list-style: none;
+    margin: 0 0 1.25rem 0;
+}
+
+.features-list li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+.features-list img {
+    margin: 0 .85rem 0 0;
+}
+
+.input-field {
+    position: relative;
+}
+
+label {
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+input {
+    border: 1px solid var(--input-border-grey);
+    border-radius: 5px;
+    display: block;
+    margin: .3rem 0 1.5rem;
+    outline: none;
+    padding: .85rem 1rem;
+    width: 100%;
+}
+
+input:hover {
+    border: 1px solid var(--bg-charcoalgrey);
+}
+
+input.error {
+    border: 1px solid var(--input-border-tomato);
+    background-color: hsla(4, 100%, 67%, 0.11);
+    color: var(--input-border-tomato);
+}
+
+small {
+    color: var(--input-border-tomato);
+    display: none;
+    font-size: 0.75rem;
+    font-weight: 700;
+    position: absolute;    
+    right: 0;
+    top: 0.2rem;
+}
+
+small.error {
+    display: block;
+}
+
+::placeholder {
+    font-size: .875rem;
+}
+
+button {
+    background-color: var(--text-d-slategrey);
+    border: none;
+    border-radius: 5px;
+    color: var(--bg-white);
+    cursor: pointer;
+    font-size: .9rem;
+    padding: .95rem;
+    width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to left,hsl(4, 100%, 67%), 40%,hsl(337, 94%, 69%));
+    box-shadow: 0px 13px 39px -7px rgba(255,98,87,0.60);
+}
+
+.success-msg-container {
+    display: none;
+}
