@@ -157,6 +157,7 @@ button:hover {
     min-height: 97.5vh;
     padding: 5rem 1.5rem 0;
     position: relative;
+    width: 100%;
 }
 
 .success-msg-container img {
