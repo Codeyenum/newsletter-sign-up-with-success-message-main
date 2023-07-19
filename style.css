@@ -145,3 +145,33 @@ button:hover {
 .success-msg-container {
     display: none;
 }
+
+.form-section.hide, .hero-img.hide {
+    display: none;
+}
+
+.success-msg-container.show {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 97.5vh;
+    padding: 5rem 1.5rem 0;
+    position: relative;
+}
+
+.success-msg-container img {
+    width: 55px;
+}
+
+.success-msg-container h2 {
+    line-height: 1;
+    margin: 2.25rem 0 1.5rem;
+}
+
+.success-msg-container p {
+    line-height: 1.5;
+}
+
+.success-msg-container button {
+    margin: auto 0 2rem;
+}
